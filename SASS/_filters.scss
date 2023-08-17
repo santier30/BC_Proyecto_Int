@@ -1,0 +1,42 @@
+.filter_flexbox{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.849);
+    flex-direction: column;
+    justify-content: center;
+    .wine_filters{
+
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+        li:first-child{
+            border-bottom:solid 2px $secondary-color;
+            text-align: center;
+        }
+        li{
+            color: #FFF;
+            width:12rem;
+            font-size: 1.2rem;
+            label,input{
+                cursor: pointer;
+            }
+        }
+    }
+}
+@include media-md{
+    .filter_flexbox{
+        flex-direction: row;
+        justify-content: flex-start;
+        .wine_filters{
+            padding: 2rem ;
+            padding-right: 2rem;
+            margin:0;
+            width: 300px;
+            align-items: start;
+
+}
+    }
+}
