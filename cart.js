@@ -22,7 +22,7 @@ items = storedItems ? JSON.parse(storedItems) : [];
 
 /////
 function totalPriceHandler(){
-  cartTotal.innerHTML = `${items.reduce((a,c)=>a+c.price*c.quantity,0)}`
+  cartTotal.innerHTML = `${items.reduce((a,c)=>a+c.price*c.quantity,0).toFixed(2)}`
 }
 //////
 function saveCartToLocalStorage() {

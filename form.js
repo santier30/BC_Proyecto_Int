@@ -284,12 +284,12 @@ const nameValidationHandler = (event) => {
       if(i.checked){selected = i.value;}
       
       const newWine = {
-        "name": firstNameInput.value,
+        "name": firstNameInput.value.trim().replace(/\s+/g, ' '),
         "category": selected,
-        "brand": wineBrandInput.value,
+        "brand": wineBrandInput.value.trim().replace(/\s+/g, ' '),
         "image": imgUrlInput.value ,
-        "short_description": shortDescriptionInput.value ,
-        "long_description":  longDescriptionInput.value ,
+        "short_description": shortDescriptionInput.value.trim().replace(/\s+/g, ' ') ,
+        "long_description":  longDescriptionInput.value.trim().replace(/\s+/g, ' '),
         "price": priceInput.value ,
         "stock": stockInput.value>99?"99+": stockInput.value
       };

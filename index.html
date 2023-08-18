@@ -46,7 +46,15 @@
           <article class="wine_home">
             <h1 class="wine_title">Catalogo</h1>
           </article>
-        <div class="filter_flexbox">
+        </section>
+      <section class="search" id="search">
+        <article action="" class="search_form">
+          <input type="text" id="searchBar" placeholder="Search wines...">
+          <button id="searchButton"><i class="fas fa-search search-icon"></i></button>
+        </article>
+      </section>
+        <section class="filter_flexbox">
+          <div>
           <ul class="wine_filters">
             <li>Elegi tu tipo favorito</li>
             <li>
@@ -74,10 +82,26 @@
               <label for="otros">Otros</label>
             </li>
           </ul>
+          <ul class="wine_filters" id="brandFilter">
+            <li>Elegi tu marca favorito</li>
+
+          </ul >
+          <ul class="wine_filters">
+           <li><label for="price-range">Rango the precio:</label></li>
+           <li>Desde</li>
+           <li><input type="range" id="price-range-min" min="0" max="1000" step="1" value="0"></li>
+           <li id="price-value-min">$0</li>
+           <li>Hasta</li>
+           <li><input type="range" id="price-range-max" min="0" max="1000" step="1" value="0"></li>
+           <li id="price-value-max">$0</li>
+            
+            
+          </yl>
+        </div>
           <article class="wine_experience">
             <!-- JS Loads the products -->
           </article>
-        </div>
+        
         </section>
       </main>
       <footer class="footer">
