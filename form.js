@@ -14,9 +14,7 @@ const nameValidationHandler = (event) => {
     if (!/^[0-9a-zA-ZáéíóúüñÁÉÍÓÚÜÑ \-'.]+$/.test(content)) {
       message.push("Caracteres especiales no permitidos, solo letras, números, espacios, guiones y comillas.");
     }
-    if (!/^([^A-Z]|[^a-z])[a-z0-9!@#$%^&*()_+{}\[\]:;<>,.?~\-\\ ]*$/.test(content)) {
-      message.push("Solo la primer letra puede ser mayuscula.");
-    }
+
   }
 
   firstNameError.innerHTML = message.length ? message.join("<br>") : "";
