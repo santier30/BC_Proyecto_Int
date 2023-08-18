@@ -13,6 +13,9 @@ const nameValidationHandler = (event) => {
       if (!/^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ ]+$/.test(content)) {
         message.push("Solo letras.");
       }
+      if (/\s{2,}/.test(content)) {
+        message.push("No ingrese espacios inesesarios.");
+      }
 
     }
   
@@ -31,6 +34,7 @@ const nameValidationHandler = (event) => {
     ) {
       message.push("Email invalido.");
     }
+
   
     emailError.innerHTML = message.length ? message.join("<br>") : "";
     emailEr = message.join("<br>");
@@ -91,7 +95,7 @@ const formValidation = () => {
     if (
       !nameEr , !emailEr, !phoneEr, !messageEr
     ) {
-        this.submit(event);
+        form.submit();
     } 
   };
   /////////////////////////////////////////////////

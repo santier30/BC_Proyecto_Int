@@ -266,6 +266,134 @@
   visibility: visible;
 }
 
+.Vintus_background {
+  background-color: rgba(0, 0, 0, 0.849);
+  height: 100%;
+}
+
+.Vintus {
+  width: 100%;
+  margin: 0rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.Vintus_article {
+  position: relative;
+  width: 100%;
+}
+.Vintus_article h2 {
+  font-size: 1.2rem;
+  color: #ea1d6f;
+  text-align: center;
+}
+.Vintus_article p {
+  font-size: 0.8rem;
+  color: #DDD;
+}
+.Vintus_img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Vintus_img img {
+  width: 100%;
+}
+
+.corner_botom,
+.corner_top {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+.corner_botom {
+  bottom: -2%;
+  right: -9%;
+  border-bottom: 1px solid #ea1d6f;
+  border-right: 1px solid #ea1d6f;
+}
+
+.corner_top {
+  top: -2%;
+  right: -9%;
+  border-top: 1px solid #ea1d6f;
+  border-right: 1px solid #ea1d6f;
+}
+
+@media screen and (min-width: 640px) {
+  .Vintus {
+    width: 95%;
+    flex-direction: row;
+  }
+  .Vintus_article {
+    width: 50%;
+  }
+  .Vintus_article p {
+    font-size: 0.6rem;
+  }
+  .Vintus_article h2 {
+    font-size: 0.9rem;
+  }
+  .Vintus_img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Vintus {
+    flex-direction: row;
+  }
+  .Vintus_article {
+    width: 50%;
+  }
+  .Vintus_article p {
+    font-size: 0.7rem;
+  }
+  .Vintus_article h2 {
+    font-size: 1rem;
+  }
+  .Vintus_img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Vintus {
+    width: 80%;
+    flex-direction: row;
+  }
+  .Vintus_article {
+    width: 50%;
+  }
+  .Vintus_article p {
+    font-size: 0.9rem;
+  }
+  .Vintus_article h2 {
+    font-size: 1.2rem;
+  }
+  .Vintus_img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .Vintus {
+    width: 70%;
+    flex-direction: row;
+  }
+  .Vintus_article {
+    width: 50%;
+  }
+  .Vintus_article p {
+    font-size: 1rem;
+  }
+  .Vintus_article h2 {
+    font-size: 1.5rem;
+  }
+  .Vintus_img {
+    width: 50%;
+  }
+}
 .cart {
   display: none;
   padding-top: 2%;
@@ -543,9 +671,7 @@
 }
 .mapouter {
   position: relative;
-  text-align: right;
   width: 100%;
-  height: 500px;
 }
 
 .gmap_canvas {
@@ -559,12 +685,16 @@
   height: 500px !important;
 }
 
-.map_title {
+.map_title, .map_sub {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.809);
   color: #ea1d6f;
   padding: 1rem;
   text-decoration: underline;
+}
+
+.map_sub {
+  padding: 0;
 }
 
 .contacts_body {

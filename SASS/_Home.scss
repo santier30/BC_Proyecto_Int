@@ -130,3 +130,128 @@
     }
   }
   
+.Vintus_background{
+  background-color: rgba(0, 0, 0, 0.849);
+  height: 100%;
+
+}  
+.Vintus{
+  width: 100%;
+  margin: 0rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  &_article{
+    position: relative;
+    width: 100%;
+    h2{
+      font-size: 1.2rem;
+      color: $secondary-color;
+      text-align: center;
+    }
+    p{
+      font-size: .8rem;
+      color: #DDD;
+    }
+  }
+  &_img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+    }
+  }
+}
+.corner_botom,
+.corner_top{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.corner_botom{
+  bottom: -2%;
+  right: -9%;
+  border-bottom: 1px solid $secondary-color;
+  border-right:1px solid $secondary-color ;
+}
+.corner_top{
+  top: -2%;
+  right: -9%;
+  border-top: 1px solid $secondary-color;
+  border-right:1px solid $secondary-color ;
+}
+@include media-md{
+  .Vintus{
+    width: 95%;
+    flex-direction: row;
+    &_article{
+      width: 50%;
+      p{
+        font-size: .6rem;
+      }
+      h2{
+        font-size: .9rem;
+      }
+    }
+    &_img{
+
+      width: 50%;
+
+    }}
+}
+@include media-lg{
+  .Vintus{
+
+    flex-direction: row;
+    &_article{
+      width: 50%;
+      p{
+        font-size: .7rem;
+      }
+      h2{
+        font-size: 1rem;
+      }
+    }
+    &_img{
+
+      width: 50%;
+
+    }}
+}
+@include media-xl{
+  .Vintus{
+    width: 80%;
+    flex-direction: row;
+    &_article{
+      width: 50%;
+      p{
+        font-size: .9rem;
+      }
+      h2{font-size: 1.2rem;}
+    }
+    &_img{
+
+      width: 50%;
+
+    }}
+}
+@include media-xxl{
+  .Vintus{
+    width: 70%;
+    flex-direction: row;
+    &_article{
+      width: 50%;
+      p{
+        font-size: 1rem;
+      }
+      h2{font-size: 1.5rem;}
+    }
+    &_img{
+
+      width: 50%;
+
+    }}
+}

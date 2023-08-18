@@ -46,7 +46,7 @@ $secondary-color: #ea1d6f;
 }
 
 @mixin media-xxl {
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1600px) {
     @content;
   }
 }
