@@ -76,6 +76,9 @@ const nameValidationHandler = (event) => {
         `Letras y (-.,()'"°/) simbolos`
       );
     }
+    if (/\s{2,}/.test(content)) {
+      message.push("No ingrese espacios inesesarios.");
+    }
   
     messageError.innerHTML = `${message.join("<br>")}`;
     messageEr = message.join("<br>");
