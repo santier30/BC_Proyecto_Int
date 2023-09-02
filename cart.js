@@ -3,7 +3,8 @@
 const cartButton = document.getElementById('cart_Button');
 const cartSection = document.getElementById('cart_section');
 const mouseOverHandler=() => {
-  if(window.innerWidth>768){cartSection.style.display = 'block';}
+  // if(window.innerWidth>768){cartSection.style.display = 'block';}
+  cartSection.style.display = 'block'; //es solo para que se vea en movile por ahora en el proyecto final no se veria el modal y simpleente iria a la pag del carrito
   };
   const mouseOutHandler=() => {
     cartSection.style.display = 'none';

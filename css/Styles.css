@@ -400,9 +400,9 @@
   background-color: rgb(255, 255, 255);
   z-index: 110;
   position: fixed;
-  top: 6%;
+  top: 63px;
   right: 2%;
-  width: 500px;
+  width: 100%;
   box-shadow: 0 0 5px #ea1d6f;
 }
 .cart .cart_item {
@@ -460,6 +460,11 @@
   color: #b9134f;
 }
 
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 500px;
+  }
+}
 .Alta {
   display: flex;
   flex-direction: column;
